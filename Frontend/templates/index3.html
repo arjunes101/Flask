@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Welcome to the Registration form</h1>
+    <p>This is a paragraph of text on your new web page.</p>
+    <p>Today is a {{days_of_week}} {{current_time}}</p>
+
+    <div class="centred">
+        <form action="/submit" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Type your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Type your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Type your password">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Type your password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <a href="get_data"><button>View Data</button></a>
+    </div>
+
+    <!-- This is a comment. It will not be visible to users -->
+
+</body>
+<style>
+    body {
+        background-color: lightgray;
+    }
+    p
+    {
+        color: yellow;
+        text-align: center;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .centred {
+        background-color: lightgray;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        border: solid 1px lightgray;
+        padding: 25px;
+    }
+
+</style>
+</html>
